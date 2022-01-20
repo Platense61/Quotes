@@ -45,7 +45,9 @@ function changeHex() {
   console.log(hex1);
   console.log(hex2);
 
-  document.body.style.background = "linear-gradient("+hex1+ ", "+ hex2 + ")";
+  document.body.style.background = "linear-gradient("+hex1+ ", "+ hex2 + ")";                 //change background gradient color to randomly generated hex1
+  var elem = document.getElementById('change');
+  elem.style.background = "linear-gradient("+hex1+ ", "+ hex2 + ")";
 }
 
 

@@ -2,18 +2,25 @@ html, body{
   margin: 0;
   padding: 0;
 }
+*, *::before, *::after{
+  box-sizing: border-box;
+}
 
 body {
       height: 100vh;
       background: linear-gradient(#10416b, black);
 }
 
-.container{
-  background-color: red;
+.card-body{
+  font-family: 'Architects Daughter', cursive;
+
+  font-family: 'Caveat', cursive;
+  font-weight: bolder;
+  font-size: 300px;
 }
 
-.card-header{
-  opacity: .4;
+#change{
+  background: linear-gradient(#10416b, black);
 }
 
 @media (min-width: 576px) {
