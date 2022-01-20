@@ -1,1 +1,23 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
 
+body {
+      height: 100vh;
+      background: linear-gradient(#10416b, black);
+}
+
+.container{
+  background-color: red;
+}
+
+.card-header{
+  opacity: .4;
+}
+
+@media (min-width: 576px) {
+  .card{
+    width: 75%;
+  }
+}
