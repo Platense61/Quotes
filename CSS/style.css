@@ -11,12 +11,18 @@ body {
       background: linear-gradient(#10416b, black);
 }
 
-.card-body{
+.card-body, .card-header{
   font-family: 'Architects Daughter', cursive;
 
   font-family: 'Caveat', cursive;
   font-weight: bolder;
-  font-size: 300px;
+}
+.card{
+  height: 250px;
+}
+
+p{
+  font-size: 1.3em;
 }
 
 #change{

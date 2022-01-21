@@ -4,6 +4,11 @@ const quotes = [
   "The measure of success is not how much time you spend doing what you love, it's how little time you spend doing what you hate",
   "Computers are incredibly fast, accurate, and stupid. Human beings are incredibly slow, inaccurate, and brilliant. Together they are powerful beyond imagination",
   "Everybody should learn to program a computer, because it teaches you how to think.",
+  "Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.",
+  "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose.",
+  "Life is made of ever so many partings welded together.",
+  "Many of life's failures are people who did not realize how close they were to success when they gave up.",
+
 
 ];
 
@@ -12,13 +17,16 @@ const author = [
   "Harry Emerson Fosdick",
   "Casey Neistat",
   "Albert Einstein",
-  "Steve Jobs"
+  "Steve Jobs",
+  "Jack Handey",
+  "Doctor Seuss",
+  "Charles Dickens",
+  "Thomas A. Edison"
 ]
 
 //This function will be used to change the quote at random upon every click of the button
 function generateQuote(){
   var num = Math.floor(Math.random() * quotes.length);
-  console.log(num);
   document.getElementById("quote").innerHTML = quotes[num];
   document.getElementById("author").innerHTML = author[num];
   changeHex();
@@ -42,8 +50,6 @@ function changeHex() {
     const index = Math.floor(Math.random() * hexValues.length)
     hex2 += hexValues[index];
   }
-  console.log(hex1);
-  console.log(hex2);
 
   document.body.style.background = "linear-gradient("+hex1+ ", "+ hex2 + ")";                 //change background gradient color to randomly generated hex1
   var elem = document.getElementById('change');
