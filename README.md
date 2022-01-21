@@ -6,7 +6,7 @@
 4. Javascript
 5. Windows10
 
-##Implementation
+## Implementation
 
 This project utilizes bootstrap5 for the markup of the page. A card element availible from bootstrap5 was used to hold both the quote and button. Most importantly my javascript utilizes 2 arrays, one to hold all quotes and another array to hold all authors. Both arrays are formatted in a way where index 0 of the 1st array corresponds to its corresponding author in the second array at index 0. A function generateQuote() was used to generate random a random number that will be used to index both arrays. An event listener is used to catch the click event.
 
